@@ -1,0 +1,12 @@
+[
+ {
+  "tool":"maya2017",
+  "datetime":"2017-11-09_17-27-02",
+  "render_version":"2.2.3.3",
+  "test_name":"Materials",
+  "render_device":"AMD Radeon (TM) Pro WX 7100 Graphics ",
+  "scene_name":"MaterialTestScene.mb",
+  "file_name":"Aluminium_Anodized.jpg",
+  "difference_color":"",
+  "difference_opacity":"",
+  "render_time":14.77},

@@ -1,0 +1,26 @@
+[
+ {
+  "datetime": "2017-11-09_17-25-11",
+  "difference_color": "",
+  "difference_cpu_color": 17.44,
+  "difference_cpu_opacity": 0.32,
+  "difference_dual_color": 17.44,
+  "difference_dual_opacity": 0.32,
+  "difference_gpu_color": 7.59,
+  "difference_gpu_opacity": 0.32,
+  "difference_opacity": "",
+  "file_name": "Camera_Cube_Map.jpg",
+  "path_cpu_color": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\CPU\\Cameras\\Color\\Camera_Cube_Map.jpg",
+  "path_cpu_opacity": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\CPU\\Cameras\\Opacity\\Camera_Cube_Map.jpg",
+  "path_dual_color": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\DUAL\\Cameras\\Color\\Camera_Cube_Map.jpg",
+  "path_dual_opacity": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\DUAL\\Cameras\\Opacity\\Camera_Cube_Map.jpg",
+  "path_gpu_color": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\GPU\\Cameras\\Color\\Camera_Cube_Map.jpg",
+  "path_gpu_opacity": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\GPU\\Cameras\\Opacity\\Camera_Cube_Map.jpg",
+  "render_device": "AMD Radeon (TM) Pro WX 7100 Graphics ",
+  "render_time": 40.77,
+  "render_version": "2.2.3.3",
+  "scene_name": "Camera_Cube_Map.mb",
+  "test_name": "Cameras",
+  "tool": "maya2017"
+ }
+]

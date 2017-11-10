@@ -1,0 +1,12 @@
+[
+ {
+  "status": "FAILED"
+ },
+ {
+  "log": [
+   "simpleRender.py start",
+   "subprocess PASSED",
+   "subprocess was terminated by monitor"
+  ]
+ }
+]

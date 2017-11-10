@@ -1,0 +1,26 @@
+[
+ {
+  "datetime": "2017-11-09_17-26-21",
+  "difference_color": "",
+  "difference_cpu_color": 33.45,
+  "difference_cpu_opacity": 0.0,
+  "difference_dual_color": 33.45,
+  "difference_dual_opacity": 0.0,
+  "difference_gpu_color": 24.98,
+  "difference_gpu_opacity": 0.0,
+  "difference_opacity": "",
+  "file_name": "Ambient_lights.jpg",
+  "path_cpu_color": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\CPU\\Lightings\\Color\\Ambient_lights.jpg",
+  "path_cpu_opacity": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\CPU\\Lightings\\Opacity\\Ambient_lights.jpg",
+  "path_dual_color": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\DUAL\\Lightings\\Color\\Ambient_lights.jpg",
+  "path_dual_opacity": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\DUAL\\Lightings\\Opacity\\Ambient_lights.jpg",
+  "path_gpu_color": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\GPU\\Lightings\\Color\\Ambient_lights.jpg",
+  "path_gpu_opacity": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\GPU\\Lightings\\Opacity\\Ambient_lights.jpg",
+  "render_device": "AMD Radeon (TM) Pro WX 7100 Graphics ",
+  "render_time": 31.63,
+  "render_version": "2.2.3.3",
+  "scene_name": "Ambient_lights.mb",
+  "test_name": "Lightings",
+  "tool": "maya2017"
+ }
+]

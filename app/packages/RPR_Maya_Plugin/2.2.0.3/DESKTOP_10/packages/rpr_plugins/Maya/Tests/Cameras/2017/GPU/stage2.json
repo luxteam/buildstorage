@@ -1,0 +1,11 @@
+[
+ {
+  "status": "OK"
+ },
+ {
+  "log": [
+   "checkExpected.py start",
+   "Checking expected files and rendered files"
+  ]
+ }
+]

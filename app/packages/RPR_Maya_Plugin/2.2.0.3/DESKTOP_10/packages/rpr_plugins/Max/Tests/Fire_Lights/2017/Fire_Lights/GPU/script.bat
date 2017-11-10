@@ -1,0 +1,1 @@
+"C:\Program Files\Autodesk\3ds Max 2017\3dsmax.exe" -U MAXScript "script.ms" -silent

@@ -1,0 +1,26 @@
+[
+ {
+  "datetime": "2017-11-09_17-28-04",
+  "difference_color": "",
+  "difference_cpu_color": 59.0,
+  "difference_cpu_opacity": 0.0,
+  "difference_dual_color": 59.0,
+  "difference_dual_opacity": 0.0,
+  "difference_gpu_color": 45.78,
+  "difference_gpu_opacity": 0.0,
+  "difference_opacity": "",
+  "file_name": "RenderModes1.jpg",
+  "path_cpu_color": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\CPU\\RenderModes\\Color\\RenderModes1.jpg",
+  "path_cpu_opacity": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\CPU\\RenderModes\\Opacity\\RenderModes1.jpg",
+  "path_dual_color": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\DUAL\\RenderModes\\Color\\RenderModes1.jpg",
+  "path_dual_opacity": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\DUAL\\RenderModes\\Opacity\\RenderModes1.jpg",
+  "path_gpu_color": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\GPU\\RenderModes\\Color\\RenderModes1.jpg",
+  "path_gpu_opacity": "D:\\jobs_launcher\\base_line\\Maya\\Base_results\\GPU\\RenderModes\\Opacity\\RenderModes1.jpg",
+  "render_device": "AMD Radeon (TM) Pro WX 7100 Graphics ",
+  "render_time": 35.84,
+  "render_version": "2.2.3.3",
+  "scene_name": "RenderModes.mb",
+  "test_name": "RenderModes",
+  "tool": "maya2017"
+ }
+]

@@ -1,0 +1,14 @@
+[
+ {
+  "tool":"maya2017",
+  "datetime":"2017-11-09_17-26-21",
+  "render_version":"2.2.3.3",
+  "test_name":"Lightings",
+  "render_device":"AMD Radeon (TM) Pro WX 7100 Graphics ",
+  "scene_name":"Ambient_lights.mb",
+  "file_name":"Ambient_lights.jpg",
+  "difference_color":"",
+  "difference_opacity":"",
+  "render_time":31.63
+ }
+]

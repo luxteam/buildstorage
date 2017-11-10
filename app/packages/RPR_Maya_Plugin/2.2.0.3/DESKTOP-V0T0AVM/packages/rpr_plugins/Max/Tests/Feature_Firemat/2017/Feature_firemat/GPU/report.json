@@ -1,0 +1,14 @@
+[
+ {
+  "Test": "Feature",
+  "Tool": "3ds Max 2017",
+  "renderDevice": "GPU",
+  "PassLimit": 20,
+  "RenderSize": 512,
+  "scene": "RPR Diffuse Material.max",
+  "frame": 0,
+  "Start_Time": "09.11.2017 17:16:15",
+  "filename": "RPR Diffuse Material.max_0.png",
+  "Render_Time": 4.084
+ }
+]

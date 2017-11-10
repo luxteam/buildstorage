@@ -1,0 +1,14 @@
+[
+ {
+  "Test": "Feature",
+  "Tool": "3ds Max 2017",
+  "renderDevice": "GPU",
+  "PassLimit": 20,
+  "RenderSize": 512,
+  "scene": "Standard Checker.max",
+  "frame": 0,
+  "Start_Time": "09.11.2017 17:16:57",
+  "filename": "Standard Checker.max_0.png",
+  "Render_Time": 3.547
+ }
+]

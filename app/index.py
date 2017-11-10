@@ -2,7 +2,9 @@ from flask import Flask
 from flask import render_template
 import json
 import os
-
+# TODO: correct work with os.path
+# TODO: mb add try
+# TODO: after get realtive pathes in session_report, add report_template.html
 
 app = Flask(__name__)
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -21,12 +23,42 @@ def package_page(package):
 
 
 @app.route("/packages/<package>/<version>")
-def build_page(package, version):
+def build_info(package, version):
     listdir = os.listdir(os.path.join(APP_ROOT, 'packages', package, version))
-    # return render_template('build_info.html', listdir=listdir, title=package + ' ' + version)
+    download_link = ''
+    for item in listdir:
+        if item.endswith('.exe') or item.endswith('.msi'):
+            download_link = item
+            del listdir[listdir.index(item)]
+
+    summary_json = {}
+    temp_json = []
+    total = {'total': 0, 'passed': 0, 'failed': 0, 'skipped': 0, 'duration': 0}
+
+    for path, dirs, files in os.walk(os.path.join(APP_ROOT, 'packages', package, version)):
+        for file in files:
+            if file == 'session_report.json':
+                with open(os.path.join(path,file), 'r') as json_file:
+                    temp_json = json_file.read()
+                temp_json = json.loads(temp_json)
+
+                for result in temp_json['results']:
+                    for item in temp_json['results'][result]:
+                        for key in total:
+                            total[key] += temp_json['results'][result][item][key]
+
+                summary_json.update({os.path.basename(path): total})
+
+    # print(json.dumps(summary_json, indent=1))
+
+    return render_template('build_info.html', listdir=listdir, link='packages/' + package + '/' + version, title=version, listdir_info=summary_json)
+
+
+@app.route("/packages/<package>/<version>/<name>")
+def session_report_page(package, version, name):
 
     report = {}
-    with open(os.path.join(APP_ROOT, 'packages', package, version, 'test_results', 'session_report.json')) as file:
+    with open(os.path.join(APP_ROOT, 'packages', package, version, name, 'session_report.json')) as file:
         report = file.read()
     report = json.loads(report)
 
@@ -39,10 +71,9 @@ def build_page(package, version):
 
     report.update({'summary': total})
 
-    # downloadlink = os.path.join(APP_ROOT, 'packages', package, version, 'test_results', list(filter(lambda x: x.endswith('.exe'), listdir))[0])
-    downloadlink = ' '
-    
-    return render_template('session_report.html', results=report['results'], total=total, downloadlink=downloadlink)
+    download_link = ' '
+
+    return render_template('session_report.html', results=report['results'], total=total, download_link=download_link)
 
 
 if __name__ == "__main__":

@@ -1,13 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>{{ title }}</title>
-</head>
-<body>
-	<ul>
-		{% for item in listdir %}
-		<li>{{ item }}</li>
-		{% endfor %}
-	</ul>
-</body>
-</html>
+{% extends "main.html" %}
+{% block full_info %}
+<hr>
+{% for package in listdir_info %}
+    <a href="/{{ link }}/{{ package }}">{{ package }}</a>
+
+    <table>
+        <tr>
+            <th>Total</th>
+            <th>Passed</th>
+            <th>Failed</th>
+            <th>Skipped</th>
+            <th>Time taken</th>
+        </tr>
+        <tr>
+            <td>{{ listdir_info[package].total }}</td>
+            <td>{{ listdir_info[package].passed }}</td>
+            <td>{{ listdir_info[package].failed }}</td>
+            <td>{{ listdir_info[package].skipped }}</td>
+            <td>{{ listdir_info[package].duration }}</td>
+        </tr>
+    </table>
+    <hr width="70%" align="left">
+
+{% endfor %}    
+{% endblock %}

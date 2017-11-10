@@ -1,0 +1,45 @@
+[
+ {
+  "status": "OK"
+ },
+ {
+  "log": [
+   "Comparison_ Maya",
+   "Comparison_ Maya",
+   "Comparison_ Maya",
+   "Comparison_ Base_results",
+   "Comparison_ Base_results",
+   "Comparison_ Base_results",
+   "Comparison_ Base_results",
+   "Comparison_ CPU",
+   "Comparison_ CPU",
+   "Comparison_ CPU",
+   "Comparison_ CPU",
+   "Comparison_ CPU",
+   "Comparison_ CPU",
+   "Comparison_ CPU",
+   "Comparison_ Base_results",
+   "Comparison_ Base_results",
+   "Comparison_ Base_results",
+   "Comparison_ Base_results",
+   "Comparison_ DUAL",
+   "Comparison_ DUAL",
+   "Comparison_ DUAL",
+   "Comparison_ DUAL",
+   "Comparison_ DUAL",
+   "Comparison_ DUAL",
+   "Comparison_ DUAL",
+   "Comparison_ Base_results",
+   "Comparison_ Base_results",
+   "Comparison_ Base_results",
+   "Comparison_ Base_results",
+   "Comparison_ GPU",
+   "Comparison_ GPU",
+   "Comparison_ GPU",
+   "Comparison_ GPU",
+   "Comparison_ GPU",
+   "Comparison_ GPU",
+   "Comparison_ GPU"
+  ]
+ }
+]

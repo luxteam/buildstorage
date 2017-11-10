@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
 </head>
 <body>
     <h1>{{ link }}</h1>
@@ -9,5 +10,7 @@
     <a href="/{{ link }}/{{ package }}">{{ package }}</a>
     <br/>
     {% endfor %}
+    {% block full_info %}
+    {% endblock %}
 </body>
 </html>
