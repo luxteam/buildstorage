@@ -1,0 +1,3790 @@
+[
+ {
+  "execution_info": "DESKTOP-V0T0AVM",
+  "failed_tests": [],
+  "machine_info": {
+   "cpu_count": "6",
+   "host": "DESKTOP-V0T0AVM",
+   "os": "Windows (64bit)"
+  },
+  "results": {
+   "test_package_main_render_all_ok": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\all_ok\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\all_ok\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_failed_previous_report": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "ERROR"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Previous stage report not found: [Errno 2] No such file or directory: 'D:\\\\jobs_launcher\\\\work\\\\UnitTest\\\\DESKTOP-V0T0AVM\\\\test_package\\\\main\\\\render\\\\failed_previous_report\\\\First\\\\report.json'"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_previous_report\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "ERROR"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Previous stage report not found: [Errno 2] No such file or directory: 'D:\\\\jobs_launcher\\\\work\\\\UnitTest\\\\DESKTOP-V0T0AVM\\\\test_package\\\\main\\\\render\\\\failed_previous_report\\\\Second\\\\report.json'"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_previous_report\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_failed_script_path": {
+    "First": {
+     "duration": 0,
+     "failed": 1,
+     "log": [],
+     "passed": 0,
+     "reportlink": "",
+     "skipped": 1,
+     "total": 1
+    },
+    "Second": {
+     "duration": 0,
+     "failed": 1,
+     "log": [],
+     "passed": 0,
+     "reportlink": "",
+     "skipped": 1,
+     "total": 1
+    }
+   },
+   "test_package_main_render_failed_stage_1": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_failed_stage_2": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_stage_2\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_stage_2\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_failed_stage_3": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_stage_3\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_stage_3\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_failed_stage_4": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_stage_4\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_stage_4\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_incorrect_stage_report": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_all_ok": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\second_all_ok\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\second_all_ok\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_all_ok_second_render": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\all_ok_second_render\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\all_ok_second_render\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_failed_previous_report": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "ERROR"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Previous stage report not found: [Errno 2] No such file or directory: 'D:\\\\jobs_launcher\\\\work\\\\UnitTest\\\\DESKTOP-V0T0AVM\\\\test_package\\\\main\\\\render_second\\\\failed_previous_report\\\\First\\\\report.json'"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_previous_report\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "ERROR"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Previous stage report not found: [Errno 2] No such file or directory: 'D:\\\\jobs_launcher\\\\work\\\\UnitTest\\\\DESKTOP-V0T0AVM\\\\test_package\\\\main\\\\render_second\\\\failed_previous_report\\\\Second\\\\report.json'"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_previous_report\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_failed_script_path": {
+    "First": {
+     "duration": 0,
+     "failed": 1,
+     "log": [],
+     "passed": 0,
+     "reportlink": "",
+     "skipped": 1,
+     "total": 1
+    },
+    "Second": {
+     "duration": 0,
+     "failed": 1,
+     "log": [],
+     "passed": 0,
+     "reportlink": "",
+     "skipped": 1,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_failed_stage_1": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_failed_stage_2": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_stage_2\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_stage_2\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_failed_stage_3": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_stage_3\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_stage_3\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_failed_stage_4": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_stage_4\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_stage_4\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_incorrect_stage_report": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_second_all_ok": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\second_all_ok\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\second_all_ok\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_all_ok": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\all_ok\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\all_ok\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_failed_previous_report": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "ERROR"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Previous stage report not found: [Errno 2] No such file or directory: 'D:\\\\jobs_launcher\\\\work\\\\UnitTest\\\\DESKTOP-V0T0AVM\\\\test_package\\\\minor\\\\render\\\\failed_previous_report\\\\First\\\\report.json'"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_previous_report\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "ERROR"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Previous stage report not found: [Errno 2] No such file or directory: 'D:\\\\jobs_launcher\\\\work\\\\UnitTest\\\\DESKTOP-V0T0AVM\\\\test_package\\\\minor\\\\render\\\\failed_previous_report\\\\Second\\\\report.json'"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_previous_report\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_failed_script_path": {
+    "First": {
+     "duration": 0,
+     "failed": 1,
+     "log": [],
+     "passed": 0,
+     "reportlink": "",
+     "skipped": 1,
+     "total": 1
+    },
+    "Second": {
+     "duration": 0,
+     "failed": 1,
+     "log": [],
+     "passed": 0,
+     "reportlink": "",
+     "skipped": 1,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_failed_stage_1": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_failed_stage_2": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_stage_2\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_stage_2\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_failed_stage_3": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_stage_3\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_stage_3\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_failed_stage_4": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_stage_4\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_stage_4\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_incorrect_stage_report": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_second_all_ok": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\second_all_ok\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\second_all_ok\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   }
+  },
+  "summary": {
+   "duration": 48,
+   "failed": 36,
+   "passed": 48,
+   "skipped": 6,
+   "total": 54
+  }
+ },
+ {
+  "execution_info": "DESKTOP-V0T0AVM_old",
+  "failed_tests": [],
+  "machine_info": {
+   "cpu_count": "6",
+   "host": "DESKTOP-V0T0AVM",
+   "os": "Windows 10(64bit)"
+  },
+  "results": {
+   "all_ok": {
+    "bat": {
+     "duration": 0,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage4.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\all_ok\\bat\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "failed_previous_report": {
+    "bat": {
+     "duration": 0,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "ERROR"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Previous stage report not found: [Errno 2] No such file or directory: 'D:\\\\jobs_launcher\\\\work\\\\UnitTest\\\\DESKTOP-V0T0AVM\\\\test_package\\\\main\\\\render\\\\failed_previous_report\\\\bat\\\\report.json'"
+        ]
+       }
+      ]
+     ],
+     "passed": 0,
+     "reportlink": " ",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "failed_script_path": {
+    "bat": {
+     "duration": 0,
+     "failed": 1,
+     "log": [],
+     "passed": 0,
+     "reportlink": " ",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "failed_stage_1": {
+    "bat": {
+     "duration": 0,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 0,
+     "reportlink": " ",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "failed_stage_2": {
+    "bat": {
+     "duration": 0,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 0,
+     "reportlink": " ",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "failed_stage_3": {
+    "bat": {
+     "duration": 0,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 0,
+     "reportlink": " ",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "failed_stage_4": {
+    "bat": {
+     "duration": 0,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage4.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 0,
+     "reportlink": " ",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "incorrect_stage_report": {
+    "bat": {
+     "duration": 0,
+     "failed": 1,
+     "log": [],
+     "passed": 0,
+     "reportlink": " ",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "second_all_ok": {
+    "bat": {
+     "duration": 0,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage4.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\second_all_ok\\bat\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   }
+  },
+  "summary": {
+   "duration": 0,
+   "failed": 7,
+   "passed": 2,
+   "skipped": 0,
+   "total": 9
+  }
+ },
+ {
+  "execution_info": "DESKTOP-V0T0AVM_oo",
+  "failed_tests": [],
+  "machine_info": {
+   "cpu_count": "6",
+   "host": "DESKTOP-V0T0AVM",
+   "os": "Windows 10(64bit)"
+  },
+  "results": {
+   "test_package_main_render_all_ok": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\all_ok\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\all_ok\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_failed_previous_report": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "ERROR"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Previous stage report not found: [Errno 2] No such file or directory: 'D:\\\\jobs_launcher\\\\work\\\\UnitTest\\\\DESKTOP-V0T0AVM\\\\test_package\\\\main\\\\render\\\\failed_previous_report\\\\First\\\\report.json'"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_previous_report\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "ERROR"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Previous stage report not found: [Errno 2] No such file or directory: 'D:\\\\jobs_launcher\\\\work\\\\UnitTest\\\\DESKTOP-V0T0AVM\\\\test_package\\\\main\\\\render\\\\failed_previous_report\\\\Second\\\\report.json'"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_previous_report\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_failed_script_path": {
+    "First": {
+     "duration": 0,
+     "failed": 1,
+     "log": [],
+     "passed": 0,
+     "reportlink": "",
+     "skipped": 1,
+     "total": 1
+    },
+    "Second": {
+     "duration": 0,
+     "failed": 1,
+     "log": [],
+     "passed": 0,
+     "reportlink": "",
+     "skipped": 1,
+     "total": 1
+    }
+   },
+   "test_package_main_render_failed_stage_1": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_failed_stage_2": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_stage_2\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_stage_2\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_failed_stage_3": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_stage_3\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_stage_3\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_failed_stage_4": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_stage_4\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_stage_4\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_incorrect_stage_report": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_all_ok": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\second_all_ok\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\second_all_ok\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_all_ok_second_render": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\all_ok_second_render\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\all_ok_second_render\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_failed_previous_report": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "ERROR"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Previous stage report not found: [Errno 2] No such file or directory: 'D:\\\\jobs_launcher\\\\work\\\\UnitTest\\\\DESKTOP-V0T0AVM\\\\test_package\\\\main\\\\render_second\\\\failed_previous_report\\\\First\\\\report.json'"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_previous_report\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "ERROR"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Previous stage report not found: [Errno 2] No such file or directory: 'D:\\\\jobs_launcher\\\\work\\\\UnitTest\\\\DESKTOP-V0T0AVM\\\\test_package\\\\main\\\\render_second\\\\failed_previous_report\\\\Second\\\\report.json'"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_previous_report\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_failed_script_path": {
+    "First": {
+     "duration": 0,
+     "failed": 1,
+     "log": [],
+     "passed": 0,
+     "reportlink": "",
+     "skipped": 1,
+     "total": 1
+    },
+    "Second": {
+     "duration": 0,
+     "failed": 1,
+     "log": [],
+     "passed": 0,
+     "reportlink": "",
+     "skipped": 1,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_failed_stage_1": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_failed_stage_2": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_stage_2\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_stage_2\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_failed_stage_3": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_stage_3\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_stage_3\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_failed_stage_4": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_stage_4\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_stage_4\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_incorrect_stage_report": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_main_render_second_second_all_ok": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\second_all_ok\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\second_all_ok\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_all_ok": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\all_ok\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\all_ok\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_failed_previous_report": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "ERROR"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Previous stage report not found: [Errno 2] No such file or directory: 'D:\\\\jobs_launcher\\\\work\\\\UnitTest\\\\DESKTOP-V0T0AVM\\\\test_package\\\\minor\\\\render\\\\failed_previous_report\\\\First\\\\report.json'"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_previous_report\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "ERROR"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Previous stage report not found: [Errno 2] No such file or directory: 'D:\\\\jobs_launcher\\\\work\\\\UnitTest\\\\DESKTOP-V0T0AVM\\\\test_package\\\\minor\\\\render\\\\failed_previous_report\\\\Second\\\\report.json'"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_previous_report\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_failed_script_path": {
+    "First": {
+     "duration": 0,
+     "failed": 1,
+     "log": [],
+     "passed": 0,
+     "reportlink": "",
+     "skipped": 1,
+     "total": 1
+    },
+    "Second": {
+     "duration": 0,
+     "failed": 1,
+     "log": [],
+     "passed": 0,
+     "reportlink": "",
+     "skipped": 1,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_failed_stage_1": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_failed_stage_2": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_stage_2\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_stage_2\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_failed_stage_3": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_stage_3\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "FAILED"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Some error"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_stage_3\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_failed_stage_4": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_stage_4\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\failed_stage_4\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_incorrect_stage_report": {
+    "First": {
+     "duration": 1,
+     "failed": 1,
+     "log": [],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 1,
+     "log": [],
+     "passed": 1,
+     "reportlink": "",
+     "skipped": 0,
+     "total": 1
+    }
+   },
+   "test_package_minor_render_second_all_ok": {
+    "First": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\second_all_ok\\First\\result.html",
+     "skipped": 0,
+     "total": 1
+    },
+    "Second": {
+     "duration": 1,
+     "failed": 0,
+     "log": [
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage1.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage2.json",
+         "Finish"
+        ]
+       }
+      ],
+      [
+       {
+        "status": "OK"
+       },
+       {
+        "log": [
+         "test_stage.py start; __ stage3.json",
+         "Finish"
+        ]
+       }
+      ]
+     ],
+     "passed": 1,
+     "reportlink": "D:\\jobs_launcher\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\minor\\render\\second_all_ok\\Second\\result.html",
+     "skipped": 0,
+     "total": 1
+    }
+   }
+  },
+  "summary": {
+   "duration": 48,
+   "failed": 36,
+   "passed": 48,
+   "skipped": 6,
+   "total": 54
+  }
+ }
+]
