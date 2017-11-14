@@ -56,7 +56,7 @@
             <td rowspan="{{ results[result]|length }}">{{ result }}</td>
             {% for item in results[result] %}
                 <td>{{ item }}</td>
-                <td><a href="{{ results[result][item].reportlink }}">Report</a></td>
+                <td><a href="{{ execution_name }}/{{ results[result][item].reportlink }}">Report</a></td>
                 <td>{{ results[result][item].total }}</td>
                 <td>{{ results[result][item].passed }}</td>
                 <td>{{ results[result][item].failed }}</td>

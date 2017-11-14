@@ -48,8 +48,7 @@ def build_info(package, version):
                             total[key] += temp_json['results'][result][item][key]
 
                 summary_json.update({os.path.basename(path): total})
-
-    # print(json.dumps(summary_json, indent=1))
+                total = {'total': 0, 'passed': 0, 'failed': 0, 'skipped': 0, 'duration': 0}
 
     return render_template('build_info.html', listdir=listdir, link='packages/' + package + '/' + version, title=version, listdir_info=summary_json)
 
@@ -73,7 +72,28 @@ def session_report_page(package, version, name):
 
     download_link = ' '
 
-    return render_template('session_report.html', results=report['results'], total=total, download_link=download_link)
+    return render_template('session_report.html', results=report['results'], total=total, download_link=download_link, execution_name=name)
+
+@app.route("/packages/<package>/<version>/<name>/<path:test_path>/result.html")
+def one_test_result_page(package, version, name, test_path):
+
+    report = []
+    with open(os.path.join(APP_ROOT, 'packages', package, version, name, test_path, 'report_compare.json')) as file:
+        report = file.read()
+    report = json.loads(report)
+
+    # print(report)
+
+    not_rendered_report = []
+    try:
+        with open(os.path.join(APP_ROOT, 'packages', package, version, name, test_path, 'not_rendered.json')) as file:
+            not_rendered_report = file.read()
+        not_rendered_report = json.loads(not_rendered_report)
+    except:
+        pass
+
+    return render_template('template.html', title='TestResult', rendered=report, not_rendered=not_rendered_report)
+    # return str([package, version, name, test_path])
 
 
 if __name__ == "__main__":
