@@ -1,0 +1,11 @@
+[
+ {
+  "status": "FAILED"
+ },
+ {
+  "log": [
+   "test_stage.py start; __ stage4.json",
+   "Some error"
+  ]
+ }
+]

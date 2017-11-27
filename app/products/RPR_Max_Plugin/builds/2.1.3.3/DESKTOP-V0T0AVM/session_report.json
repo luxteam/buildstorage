@@ -1,0 +1,176 @@
+{
+ "failed_tests": [],
+ "machine_info": {
+  "cpu_count": "6",
+  "host": "DESKTOP-V0T0AVM",
+  "os": "Windows 10(64bit)"
+ },
+ "results": {
+  "packages_rpr_plugins_Max_Tests_Feature_Firemat": {
+   "2017 CPU": {
+    "duration": 66,
+    "failed": 1,
+    "log": [
+     [
+      {
+       "status": "OK"
+      },
+      {
+       "log": [
+        "simpleRender.py start",
+        "subprocess PASSED"
+       ]
+      }
+     ],
+     [
+      {
+       "status": "OK"
+      },
+      {
+       "log": [
+        "checkExpected.py start",
+        "Checking expected files and rendered files"
+       ]
+      }
+     ]
+    ],
+    "passed": 0,
+    "reportlink": "packages\\rpr_plugins\\Max\\Tests\\Feature_Firemat\\2017\\CPU\\result.json",
+    "skipped": 0,
+    "total": 1
+   }
+  },
+  "packages_rpr_plugins_Max_Tests_Feature_Standmat": {
+   "2017 CPU": {
+    "duration": 51,
+    "failed": 1,
+    "log": [
+     [
+      {
+       "status": "OK"
+      },
+      {
+       "log": [
+        "simpleRender.py start",
+        "subprocess PASSED"
+       ]
+      }
+     ],
+     [
+      {
+       "status": "OK"
+      },
+      {
+       "log": [
+        "checkExpected.py start",
+        "Checking expected files and rendered files"
+       ]
+      }
+     ]
+    ],
+    "passed": 0,
+    "reportlink": "packages\\rpr_plugins\\Max\\Tests\\Feature_Standmat\\2017\\CPU\\result.json",
+    "skipped": 0,
+    "total": 1
+   }
+  },
+  "packages_rpr_plugins_Max_Tests_Fire_Lights": {
+   "2017 CPU": {
+    "duration": 468,
+    "failed": 1,
+    "log": [
+     [
+      {
+       "status": "OK"
+      },
+      {
+       "log": [
+        "simpleRender.py start",
+        "subprocess PASSED"
+       ]
+      }
+     ],
+     [
+      {
+       "status": "OK"
+      },
+      {
+       "log": [
+        "checkExpected.py start",
+        "Checking expected files and rendered files"
+       ]
+      }
+     ]
+    ],
+    "passed": 0,
+    "reportlink": "packages\\rpr_plugins\\Max\\Tests\\Fire_Lights\\2017\\CPU\\result.json",
+    "skipped": 0,
+    "total": 1
+   }
+  },
+  "packages_rpr_plugins_Max_Tests_Fire_Modes": {
+   "2017 CPU": {
+    "duration": 180,
+    "failed": 1,
+    "log": [
+     [
+      {
+       "status": "OK"
+      },
+      {
+       "log": [
+        "simpleRender.py start",
+        "subprocess PASSED"
+       ]
+      }
+     ],
+     [
+      {
+       "status": "OK"
+      },
+      {
+       "log": [
+        "checkExpected.py start",
+        "Checking expected files and rendered files"
+       ]
+      }
+     ]
+    ],
+    "passed": 0,
+    "reportlink": "packages\\rpr_plugins\\Max\\Tests\\Fire_Modes\\2017\\CPU\\result.json",
+    "skipped": 0,
+    "total": 1
+   }
+  },
+  "packages_rpr_plugins_Max_Tests_Material_Test": {
+   "2017 CPU": {
+    "duration": 96,
+    "failed": 1,
+    "log": [
+     [
+      {
+       "status": "OK"
+      },
+      {
+       "log": [
+        "simpleRender.py start",
+        "subprocess PASSED"
+       ]
+      }
+     ]
+    ],
+    "passed": 0,
+    "reportlink": "packages\\rpr_plugins\\Max\\Tests\\Material_Test\\2017\\CPU\\result.json",
+    "skipped": 0,
+    "total": 1
+   }
+  }
+ },
+ "summary": {
+  "duration": 861,
+  "failed": 5,
+  "passed": 0,
+  "skipped": 0,
+  "total": 5
+ }
+}

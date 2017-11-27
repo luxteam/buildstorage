@@ -12,19 +12,19 @@ APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 @app.route("/")
 def main_page():
-    listdir = os.listdir(os.path.join(APP_ROOT, 'packages'))
-    return render_template('main.html', listdir=listdir, link='packages', title='Main')
+    listdir = os.listdir(os.path.join(APP_ROOT, 'products'))
+    return render_template('main.html', listdir=listdir, link='products', title='Main')
 
 
-@app.route("/packages/<package>")
+@app.route("/products/<package>")
 def package_page(package):
-    listdir = os.listdir(os.path.join(APP_ROOT, 'packages', package))
-    return render_template('main.html', listdir=listdir, link='packages/' + package, title=package)
+    listdir = os.listdir(os.path.join(APP_ROOT, 'products', package, 'builds    '))
+    return render_template('main.html', listdir=listdir, link='products/' + package, title=package)
 
 
-@app.route("/packages/<package>/<version>")
+@app.route("/products/builds/<package>/<version>")
 def build_info(package, version):
-    listdir = os.listdir(os.path.join(APP_ROOT, 'packages', package, version))
+    listdir = os.listdir(os.path.join(APP_ROOT, 'products', package, version))
     download_link = ''
     for item in listdir:
         if item.endswith('.exe') or item.endswith('.msi'):
@@ -35,7 +35,7 @@ def build_info(package, version):
     temp_json = []
     total = {'total': 0, 'passed': 0, 'failed': 0, 'skipped': 0, 'duration': 0}
 
-    for path, dirs, files in os.walk(os.path.join(APP_ROOT, 'packages', package, version)):
+    for path, dirs, files in os.walk(os.path.join(APP_ROOT, 'products', 'builds', package, version)):
         for file in files:
             if file == 'session_report.json':
                 with open(os.path.join(path,file), 'r') as json_file:
@@ -50,14 +50,14 @@ def build_info(package, version):
                 summary_json.update({os.path.basename(path): total})
                 total = {'total': 0, 'passed': 0, 'failed': 0, 'skipped': 0, 'duration': 0}
 
-    return render_template('build_info.html', listdir=listdir, link='packages/' + package + '/' + version, title=version, listdir_info=summary_json)
+    return render_template('build_info.html', listdir=listdir, link='products/builds/' + package + '/' + version, title=version, listdir_info=summary_json)
 
 
-@app.route("/packages/<package>/<version>/<name>")
+@app.route("/products/builds/<package>/<version>/<name>")
 def session_report_page(package, version, name):
 
     report = {}
-    with open(os.path.join(APP_ROOT, 'packages', package, version, name, 'session_report.json')) as file:
+    with open(os.path.join(APP_ROOT, 'products', package, version, name, 'session_report.json')) as file:
         report = file.read()
     report = json.loads(report)
 
@@ -74,27 +74,28 @@ def session_report_page(package, version, name):
 
     return render_template('session_report.html', results=report['results'], total=total, download_link=download_link, execution_name=name)
 
-@app.route("/packages/<package>/<version>/<name>/<path:test_path>/result.html")
+@app.route("/products/builds/<package>/<version>/<name>/<path:test_path>/result.json")
 def one_test_result_page(package, version, name, test_path):
 
-    report = []
-    with open(os.path.join(APP_ROOT, 'packages', package, version, name, test_path, 'report_compare.json')) as file:
-        report = file.read()
-    report = json.loads(report)
+    # report = []
+    # with open(os.path.join(APP_ROOT, 'products', package, version, name, test_path, 'report_compare.json')) as file:
+    #     report = file.read()
+    # report = json.loads(report)
 
-    # print(report)
+    # # print(report)
 
-    not_rendered_report = []
-    try:
-        with open(os.path.join(APP_ROOT, 'packages', package, version, name, test_path, 'not_rendered.json')) as file:
-            not_rendered_report = file.read()
-        not_rendered_report = json.loads(not_rendered_report)
-    except:
-        pass
+    # not_rendered_report = []
+    # try:
+    #     with open(os.path.join(APP_ROOT, 'products', package, version, name, test_path, 'not_rendered.json')) as file:
+    #         not_rendered_report = file.read()
+    #     not_rendered_report = json.loads(not_rendered_report)
+    # except:
+    #     pass
 
-    return render_template('template.html', title='TestResult', rendered=report, not_rendered=not_rendered_report)
-    # return str([package, version, name, test_path])
+    # return render_template('template.html', title='TestResult', rendered=report, not_rendered=not_rendered_report)
+    return 'here will be test report page'
 
 
 if __name__ == "__main__":
+    # TODO: debug=False to release
     app.run(debug=True)

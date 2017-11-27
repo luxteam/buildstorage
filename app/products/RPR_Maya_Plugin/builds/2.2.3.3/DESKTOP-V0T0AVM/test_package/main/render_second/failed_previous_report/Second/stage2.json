@@ -1,0 +1,11 @@
+[
+ {
+  "status": "ERROR"
+ },
+ {
+  "log": [
+   "test_stage.py start; __ stage2.json",
+   "Previous stage report not found: [Errno 2] No such file or directory: 'D:\\\\jobs_launcher_main\\\\work\\\\UnitTest\\\\DESKTOP-V0T0AVM\\\\test_package\\\\main\\\\render_second\\\\failed_previous_report\\\\Second\\\\report.json'"
+  ]
+ }
+]

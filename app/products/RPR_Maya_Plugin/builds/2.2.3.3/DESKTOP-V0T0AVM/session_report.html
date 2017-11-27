@@ -1,0 +1,1991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style media="screen" type="text/css">
+        a:link    {
+        color: "black"}
+        a:visited {color: "black"}
+        a:active  {color: "black"}
+
+        tr.passed    { background-color: "greenyellow"; }
+        tr.failed    { background-color: "red"; }
+        tr.unknown   { background-color: "darkgray"; }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 2px;
+        }
+            table {
+            border-collapse: collapse;
+        }
+
+        .heap {
+            font-family: Arial;
+        }
+        .heap td {
+            text-align: center;
+            font-family: Arial;
+            font-size: 16px;
+            padding: 4px 7px 2px;
+            vertical-align: top;
+        }
+        .heap th {
+            text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;
+            font-family: Arial,"Bitstream Vera Sans",Helvetica,Verdana,sans-serif;
+            font-weight: 700;
+            line-height: 1.3em;
+            font-size: 16px;
+            background-color: "#d0e0e0"
+        }
+
+        td.left   { text-align: left; }
+
+        .logtable {
+            display: none;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function switchLogtable(tableId){
+            var table = document.getElementById(tableId);
+            if (table.style.display == "block"){
+                table.style.display = "none";
+            } else {
+                table.style.display = "block";
+            }
+        }
+    </script>
+    <title>Title</title>
+</head>
+<body>
+    <h2>Summary</h2>
+    <table class="heap">
+        <tr>
+            <th>Total</th>
+            <th>Passed</th>
+            <th>Failed</th>
+            <th>Skipped</th>
+            <th>Time taken</th>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>12</td>
+            <td>22</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>Details</h2>
+    <table class="heap">
+        <tr>
+            <th>Name</th>
+            <th>Config</th>
+            <th>Report</th>
+            <th>Total</th>
+            <th>Passed</th>
+            <th>Failed</th>
+            <th>Skipped</th>
+            <th>Time taken</th>
+            <th>LOG</th>
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="2">test_package_main_render_second_failed_previous_report</td>
+            
+                <td>First</td>
+                <td><a href="test_package\main\render_second\failed_previous_report\First\result.json">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable11')">Show log</div>
+                    <table class="logtable" id="logtable11">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>ERROR</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Previous stage report not found: [Errno 2] No such file or directory: &#39;D:\\jobs_launcher_main\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_previous_report\\First\\report.json&#39;
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second</td>
+                <td><a href="test_package\main\render_second\failed_previous_report\Second\result.json">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable12')">Show log</div>
+                    <table class="logtable" id="logtable12">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>ERROR</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Previous stage report not found: [Errno 2] No such file or directory: &#39;D:\\jobs_launcher_main\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render_second\\failed_previous_report\\Second\\report.json&#39;
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="2">test_package_main_render_failed_previous_report</td>
+            
+                <td>First</td>
+                <td><a href="test_package\main\render\failed_previous_report\First\result.json">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable21')">Show log</div>
+                    <table class="logtable" id="logtable21">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>ERROR</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Previous stage report not found: [Errno 2] No such file or directory: &#39;D:\\jobs_launcher_main\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_previous_report\\First\\report.json&#39;
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second</td>
+                <td><a href="test_package\main\render\failed_previous_report\Second\result.json">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable22')">Show log</div>
+                    <table class="logtable" id="logtable22">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>ERROR</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Previous stage report not found: [Errno 2] No such file or directory: &#39;D:\\jobs_launcher_main\\work\\UnitTest\\DESKTOP-V0T0AVM\\test_package\\main\\render\\failed_previous_report\\Second\\report.json&#39;
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="2">test_package_minor_render_second_all_ok</td>
+            
+                <td>First</td>
+                <td><a href="test_package\minor\render\second_all_ok\First\result.json">Report</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable31')">Show log</div>
+                    <table class="logtable" id="logtable31">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second</td>
+                <td><a href="test_package\minor\render\second_all_ok\Second\result.json">Report</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable32')">Show log</div>
+                    <table class="logtable" id="logtable32">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="4">test_package_main_render_second_all_ok_second_render</td>
+            
+                <td>Second Second configuration</td>
+                <td><a href="test_package\main\render_second\all_ok_second_render\Second\Second configuration\result.json">Report</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable41')">Show log</div>
+                    <table class="logtable" id="logtable41">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>First Second configuration</td>
+                <td><a href="test_package\main\render_second\all_ok_second_render\First\Second configuration\result.json">Report</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable42')">Show log</div>
+                    <table class="logtable" id="logtable42">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>First First configuration</td>
+                <td><a href="test_package\main\render_second\all_ok_second_render\First\First configuration\result.json">Report</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable43')">Show log</div>
+                    <table class="logtable" id="logtable43">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second First configuration</td>
+                <td><a href="test_package\main\render_second\all_ok_second_render\Second\First configuration\result.json">Report</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable44')">Show log</div>
+                    <table class="logtable" id="logtable44">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="2">test_package_main_render_incorrect_stage_report</td>
+            
+                <td>First</td>
+                <td><a href="">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable51')">Show log</div>
+                    <table class="logtable" id="logtable51">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second</td>
+                <td><a href="">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable52')">Show log</div>
+                    <table class="logtable" id="logtable52">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="2">test_package_main_render_failed_stage_4</td>
+            
+                <td>First</td>
+                <td><a href="test_package\main\render\failed_stage_4\First\result.json">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable61')">Show log</div>
+                    <table class="logtable" id="logtable61">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>FAILED</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Some error
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second</td>
+                <td><a href="test_package\main\render\failed_stage_4\Second\result.json">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable62')">Show log</div>
+                    <table class="logtable" id="logtable62">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>FAILED</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Some error
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="2">test_package_main_render_second_second_all_ok</td>
+            
+                <td>First</td>
+                <td><a href="test_package\main\render_second\second_all_ok\First\result.json">Report</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable71')">Show log</div>
+                    <table class="logtable" id="logtable71">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second</td>
+                <td><a href="test_package\main\render_second\second_all_ok\Second\result.json">Report</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable72')">Show log</div>
+                    <table class="logtable" id="logtable72">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="2">test_package_main_render_failed_stage_2</td>
+            
+                <td>First</td>
+                <td><a href="test_package\main\render\failed_stage_2\First\result.json">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable81')">Show log</div>
+                    <table class="logtable" id="logtable81">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>FAILED</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Some error
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second</td>
+                <td><a href="test_package\main\render\failed_stage_2\Second\result.json">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable82')">Show log</div>
+                    <table class="logtable" id="logtable82">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>FAILED</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Some error
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="2">test_package_main_render_second_all_ok</td>
+            
+                <td>First</td>
+                <td><a href="test_package\main\render\second_all_ok\First\result.json">Report</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable91')">Show log</div>
+                    <table class="logtable" id="logtable91">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second</td>
+                <td><a href="test_package\main\render\second_all_ok\Second\result.json">Report</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable92')">Show log</div>
+                    <table class="logtable" id="logtable92">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="2">test_package_main_render_failed_stage_3</td>
+            
+                <td>First</td>
+                <td><a href="test_package\main\render\failed_stage_3\First\result.json">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable101')">Show log</div>
+                    <table class="logtable" id="logtable101">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>FAILED</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Some error
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second</td>
+                <td><a href="test_package\main\render\failed_stage_3\Second\result.json">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable102')">Show log</div>
+                    <table class="logtable" id="logtable102">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>FAILED</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Some error
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="2">test_package_minor_render_incorrect_stage_report</td>
+            
+                <td>First</td>
+                <td><a href="">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable111')">Show log</div>
+                    <table class="logtable" id="logtable111">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second</td>
+                <td><a href="">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable112')">Show log</div>
+                    <table class="logtable" id="logtable112">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="2">test_package_main_render_failed_stage_1</td>
+            
+                <td>First</td>
+                <td><a href="">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable121')">Show log</div>
+                    <table class="logtable" id="logtable121">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>FAILED</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Some error
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second</td>
+                <td><a href="">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable122')">Show log</div>
+                    <table class="logtable" id="logtable122">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>FAILED</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Some error
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="2">test_package_main_render_failed_script_path</td>
+            
+                <td>First</td>
+                <td><a href="">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable131')">Show log</div>
+                    <table class="logtable" id="logtable131">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second</td>
+                <td><a href="">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable132')">Show log</div>
+                    <table class="logtable" id="logtable132">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="2">test_package_main_render_all_ok</td>
+            
+                <td>First</td>
+                <td><a href="test_package\main\render\all_ok\First\result.json">Report</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable141')">Show log</div>
+                    <table class="logtable" id="logtable141">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second</td>
+                <td><a href="test_package\main\render\all_ok\Second\result.json">Report</a></td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable142')">Show log</div>
+                    <table class="logtable" id="logtable142">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="2">test_package_main_render_second_failed_stage_1</td>
+            
+                <td>First</td>
+                <td><a href="">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable151')">Show log</div>
+                    <table class="logtable" id="logtable151">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>FAILED</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Some error
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second</td>
+                <td><a href="">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable152')">Show log</div>
+                    <table class="logtable" id="logtable152">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>FAILED</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Some error
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="2">test_package_minor_render_failed_stage_4</td>
+            
+                <td>First</td>
+                <td><a href="test_package\minor\render\failed_stage_4\First\result.json">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable161')">Show log</div>
+                    <table class="logtable" id="logtable161">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>FAILED</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Some error
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+                <td>Second</td>
+                <td><a href="test_package\minor\render\failed_stage_4\Second\result.json">Report</a></td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>
+                    <div class="Button" onclick="switchLogtable('logtable162')">Show log</div>
+                    <table class="logtable" id="logtable162">
+                        <tr>
+                            <th>Stage status</th>
+                            <th>Stage log</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage1.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage2.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>OK</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage3.json
+                                <br/>
+                                
+                                Finish
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>FAILED</td>
+                            <td>
+                                
+                                test_stage.py start; __ stage4.json
+                                <br/>
+                                
+                                Some error
+                                <br/>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+        </tr>
+        <tr>
+            
+        </tr>
+        
+    </table>
+</body>
+</html>
