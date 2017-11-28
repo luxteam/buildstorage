@@ -5,12 +5,18 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
 </head>
 <body>
-    <h1>{{ link }}</h1>
-    {% for package in listdir %}
-    <a href="/{{ link }}/{{ package }}">{{ package }}</a>
-    <br/>
-    {% endfor %}
-    {% block full_info %}
+	<table id="control_panel">
+		<tr>
+			<td>Main</td>
+			<td>Max</td>
+			<td>Maya</td>
+			<td>Blender</td>
+			<td>Solid works</td>
+            <td>Tools</td>
+            <td>Login form</td>
+		</tr>
+	</table>
+    {% block main_body %}
     {% endblock %}
 </body>
 </html>

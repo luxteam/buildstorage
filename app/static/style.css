@@ -1,28 +1,14 @@
-a:link {
-    color: "black"
-}
-a:visited {
-    color: "black"
-}
-a:active {
-    color: "black"
-}
-
-tr.passed {
-    background-color: "greenyellow";
-}
-tr.failed {
-    background-color: "red";
-}
-tr.unknown {
-    background-color: "darkgray";
+#control_panel{
+    /*position: fixed;*/
+    width: 100%;
 }
 
 table, th, td {
     border: 1px solid black;
     padding: 2px;
 }
-    table {
+
+table {
     border-collapse: collapse;
 }
 

@@ -1,0 +1,14 @@
+{% include "main.html" %}
+
+{% block main_body %}
+
+<ul>
+{% for dir in dirs %}
+    <li><a href="{{ dir }}/">{{ dir }}</a></li>
+{% endfor %}
+</ul>
+
+{% endblock %}
+
+{% block folders_tree_extend %}
+{% endblock %}

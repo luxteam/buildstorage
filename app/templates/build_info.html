@@ -1,5 +1,6 @@
-{% extends "main.html" %}
-{% block full_info %}
+{% extends "folders_tree.html" %}
+
+{% block folders_tree_extend %}
 <hr>
 {% for package in listdir_info %}
     <a href="/{{ link }}/{{ package }}">{{ package }}</a>
@@ -22,5 +23,6 @@
     </table>
     <hr width="70%" align="left">
 
-{% endfor %}    
+{% endfor %}
+
 {% endblock %}
