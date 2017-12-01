@@ -1,29 +1,31 @@
 {% extends "main.html" %}
 
 {% block main_body %}
-<div id="build_info">
-<hr>
-{% for package in listdir_info %}
-    <a href="/{{ link }}/{{ package }}">{{ package }}</a>
+    <div id="build_info">
+        <hr>
+        {% for package in listdir_info %}
+        <a href="/{{ link }}/{{ package }}">{{ package }}</a>
 
-    <table>
-        <tr>
-            <th>Total</th>
-            <th>Passed</th>
-            <th>Failed</th>
-            <th>Skipped</th>
-            <th>Time taken</th>
-        </tr>
-        <tr>
-            <td>{{ listdir_info[package].total }}</td>
-            <td>{{ listdir_info[package].passed }}</td>
-            <td>{{ listdir_info[package].failed }}</td>
-            <td>{{ listdir_info[package].skipped }}</td>
-            <td>{{ listdir_info[package].duration }}</td>
-        </tr>
-    </table>
-    <hr width="70%" align="left">
-</div>
-{% endfor %}
+        <table>
+            <tr>
+                <th>Total</th>
+                <th>Passed</th>
+                <th>Failed</th>
+                <th>Skipped</th>
+                <th>Time taken</th>
+            </tr>
+            <tr>
+                <td>{{ listdir_info[package].total }}</td>
+                <td>{{ listdir_info[package].passed }}</td>
+                <td>{{ listdir_info[package].failed }}</td>
+                <td>{{ listdir_info[package].skipped }}</td>
+                <td>{{ listdir_info[package].duration }}</td>
+            </tr>
+        </table>
+
+        <hr width="70%" align="left">
+        {% endfor %}
+    </div>
+    
 
 {% endblock %}

@@ -3,39 +3,51 @@
 <head>
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
     <div id="body_space">
         <div id="top_control_panel">
-            <!-- TODO: replace table by list -> https://www.w3schools.com/css/css_navbar.asp -->
-            <table>
-                <tr>
-                    <td><a href='/'>Main</a></td>
-                    <td><a href=''>Max</a></td>
-                    <td><a href=''>Maya</a></td>
-                    <td><a href=''>Blender</a></td>
-                    <td><a href=''>Solid works</a></td>
-                    <td><a href=''>Tools</a></td>
-                    <td><a href=''>Login form</a></td>
-                </tr>
-            </table>
-        </div>
-
-        <div id="left_control_panel">
-            <p>temporaly empty</p>
-        </div>
-
-        <div id="folders_tree">
-            <h2>{{ dir_root }}</h2>
             <ul>
-            {% for dir in dirs %}
-                <li><a href="{{ dir }}/">{{ dir }}</a></li>
-            {% endfor %}
+                <li><a href='/'>Main</a></li>
+                <li><a href=''>Max</a></li>
+                <li><a href=''>Maya</a></li>
+                <li><a href=''>Blender</a></li>
+                <li><a href=''>Solid works</a></li>
+                <li><a href=''>Tools</a></li>
+                <li><a href=''>Login form</a></li>
             </ul>
         </div>
 
-        {% block main_body %}
-        {% endblock %}
+        <div id="left_control_panel">
+            {% if folders_tree %}
+                <ul>
+                    {% for item in folders_tree.children recursive %}
+                        <li>{{ item.name }}
+                        {% if item.children %}
+                            <ul>{{ loop(item.children) }}</ul>
+                        {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+
+        <div id="main_body">
+            {% if dirs %}
+            <div id="folders_tree">
+                <h2>{{ dir_root }}</h2>
+                <ul>
+                {% for dir in dirs %}
+                    <li><a href="{{ dir }}/">{{ dir }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+
+            {% block main_body %}
+            {% endblock %}
+        </div>
     </div>
 </body>
 </html>

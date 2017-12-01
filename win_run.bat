@@ -1,1 +1,1 @@
-c:\python35\python.exe app\index.py
+c:\python35\python.exe run.py

@@ -1,12 +1,10 @@
-from flask import Flask
+from app import app
+from app import FoldersTree
 from flask import render_template
-
 import json
 import os
 
-# TODO: add try-catch when working with files
-
-app = Flask(__name__)
+# app = Flask(__name__)
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 CONTENT_ROOT = 'builds'
 
@@ -14,9 +12,11 @@ CONTENT_ROOT = 'builds'
 @app.route("/")
 def main_page():
     listdir = os.listdir(os.path.join(APP_ROOT, CONTENT_ROOT))
+    folders_tree = FoldersTree.get_tree_dict(os.path.join(APP_ROOT, CONTENT_ROOT))
+    
     link = ''
 
-    return render_template('main.html', title='RPR CIS', dirs=listdir, link=link, dir_root="/")
+    return render_template('main.html', title='RPR CIS', dirs=listdir, link=link, dir_root="/", folders_tree=folders_tree)
 
 
 @app.route("/<path:directory>/")
@@ -93,6 +93,6 @@ def directory_page(directory):
 #     return 'here will be test report page'
 
 
-if __name__ == "__main__":
-    # TODO: debug=False to release
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     # TODO: debug=False to release
+#     app.run(debug=True)
