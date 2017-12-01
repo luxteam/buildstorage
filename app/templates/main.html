@@ -25,6 +25,15 @@
             <p>temporaly empty</p>
         </div>
 
+        <div id="folders_tree">
+            <h2>{{ dir_root }}</h2>
+            <ul>
+            {% for dir in dirs %}
+                <li><a href="{{ dir }}/">{{ dir }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+
         {% block main_body %}
         {% endblock %}
     </div>
