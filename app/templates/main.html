@@ -5,18 +5,28 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
 </head>
 <body>
-	<table id="control_panel">
-		<tr>
-			<td>Main</td>
-			<td>Max</td>
-			<td>Maya</td>
-			<td>Blender</td>
-			<td>Solid works</td>
-            <td>Tools</td>
-            <td>Login form</td>
-		</tr>
-	</table>
-    {% block main_body %}
-    {% endblock %}
+    <div id="body_space">
+        <div id="top_control_panel">
+            <!-- TODO: replace table by list -> https://www.w3schools.com/css/css_navbar.asp -->
+            <table>
+                <tr>
+                    <td><a href='/'>Main</a></td>
+                    <td><a href=''>Max</a></td>
+                    <td><a href=''>Maya</a></td>
+                    <td><a href=''>Blender</a></td>
+                    <td><a href=''>Solid works</a></td>
+                    <td><a href=''>Tools</a></td>
+                    <td><a href=''>Login form</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="left_control_panel">
+            <p>temporaly empty</p>
+        </div>
+
+        {% block main_body %}
+        {% endblock %}
+    </div>
 </body>
 </html>

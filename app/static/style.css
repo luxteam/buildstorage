@@ -1,15 +1,91 @@
-#control_panel{
-    /*position: fixed;*/
-    width: 100%;
+body{
+    background: #303030;
+    background: linear-gradient(to top left, #FFF, #c6c4c4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%
 }
-
+/*table {
+    border-collapse: collapse;
+}
 table, th, td {
     border: 1px solid black;
     padding: 2px;
+}*/
+
+/*TOP table menu*/
+#top_control_panel table{
+    /*border: 0px;*/
+    /*position: relative;*/
+    width: 100%;
+    padding: 5px;
+    /*border-spacing: 5px;*/
+    /*margin-left: 10px;*/
+    border-collapse: collapse;
+    text-align: center;
+    border: 0px;
+}
+#top_control_panel table tr, td{
+    border: 0px;
+    /*border: 1px solid black;*/
+    padding: 5px;
+    background-color: #282828;
+}
+#top_control_panel a{
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font: normal;
+    text-decoration: none;
+}
+#top_control_panel a:link{
+    color: #ccc;
+}
+#top_control_panel a:visited{
+    color: #bbb;
+}
+#top_control_panel a:hover{
+    color: #000;
+}
+#top_control_panel tr td:hover{
+    background-color: #fff;
 }
 
-table {
-    border-collapse: collapse;
+
+/*Left side bat temporaly empty*/
+#left_control_panel{
+    position: relative;
+    top: 5px;
+    /*margin: 3px;*/
+    /*left: 1px;*/
+    float: left;
+    width: 20%;
+    height: 100vh;
+    background-color: #282828;
+    color: #fff;
+}
+
+
+/*ul displayed folders structure*/
+#folders_tree{
+    top: 5px;
+    float: left;
+    position: relative;
+    
+}
+#folders_tree a{
+    font-family: Arial;
+    font-size: 19px;
+    font: normal;
+    /*font-weight: 700;*/
+}
+#folders_tree a:link{
+    color: #000;
+}
+#folders_tree a:visited{
+    color: #000;
+}
+#folders_tree a:hover{
+    color: #615d87;
 }
 
 .heap {

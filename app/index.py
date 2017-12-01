@@ -16,7 +16,7 @@ def main_page():
     listdir = os.listdir(os.path.join(APP_ROOT, CONTENT_ROOT))
     link = ''
 
-    return render_template('folders_tree.html', title='RPR CIS', dirs=listdir, link=link)
+    return render_template('folders_tree.html', title='RPR CIS', dirs=listdir, link=link, dir_root="/")
 
 
 @app.route("/<path:directory>/")
@@ -26,7 +26,7 @@ def directory_page(directory):
     link = directory
 
     if not 'build.manifest.json' in listdir:
-        return render_template('folders_tree.html', title='RPR CIS', dirs=listdir, link=link)
+        return render_template('folders_tree.html', title='RPR CIS', dirs=listdir, link=link, dir_root=directory)
     else:
         summary_json = {}
         temp_json = []
@@ -47,7 +47,7 @@ def directory_page(directory):
                     summary_json.update({os.path.basename(path): total})
                     total = {'total': 0, 'passed': 0, 'failed': 0, 'skipped': 0, 'duration': 0}
 
-        return render_template('build_info.html', dirs=listdir, link=link, title='BUILD info', listdir_info=summary_json)
+        return render_template('build_info.html', dirs=listdir, link=link, title='BUILD info', listdir_info=summary_json, dir_root=directory)
 
 
 # @app.route("/products/builds/<package>/<version>/<name>")

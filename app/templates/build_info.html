@@ -1,6 +1,7 @@
 {% extends "folders_tree.html" %}
 
 {% block folders_tree_extend %}
+<div id="build_info">
 <hr>
 {% for package in listdir_info %}
     <a href="/{{ link }}/{{ package }}">{{ package }}</a>
@@ -22,7 +23,7 @@
         </tr>
     </table>
     <hr width="70%" align="left">
-
+</div>
 {% endfor %}
 
 {% endblock %}
