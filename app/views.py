@@ -1,5 +1,6 @@
 from app import app
 from app import FoldersTree
+
 from flask import render_template
 import json
 import os
@@ -12,8 +13,8 @@ CONTENT_ROOT = 'builds'
 @app.route("/")
 def main_page():
     listdir = os.listdir(os.path.join(APP_ROOT, CONTENT_ROOT))
-    folders_tree = FoldersTree.get_tree_dict(os.path.join(APP_ROOT, CONTENT_ROOT))
-    
+    folders_tree = FoldersTree.get_tree_dict(os.path.join(APP_ROOT, CONTENT_ROOT), '')
+
     link = ''
 
     return render_template('main.html', title='RPR CIS', dirs=listdir, link=link, dir_root="/", folders_tree=folders_tree)
@@ -23,10 +24,11 @@ def main_page():
 def directory_page(directory):
 
     listdir = os.listdir(os.path.join(APP_ROOT, CONTENT_ROOT, directory))
+    folders_tree = FoldersTree.get_tree_dict(os.path.join(APP_ROOT, CONTENT_ROOT, directory), '')
     link = directory
 
     if not 'build.manifest.json' in listdir:
-        return render_template('main.html', title='RPR CIS', dirs=listdir, link=link, dir_root=directory)
+        return render_template('main.html', title='RPR CIS', dirs=listdir, link=link, dir_root=directory, folders_tree=folders_tree)
     else:
         summary_json = {}
         temp_json = []
@@ -47,7 +49,7 @@ def directory_page(directory):
                     summary_json.update({os.path.basename(path): total})
                     total = {'total': 0, 'passed': 0, 'failed': 0, 'skipped': 0, 'duration': 0}
 
-        return render_template('build_info.html', dirs=listdir, link=link, title='BUILD info', listdir_info=summary_json, dir_root=directory)
+        return render_template('build_info.html', dirs=listdir, link=link, title='BUILD info', listdir_info=summary_json, folders_tree=folders_tree, dir_root=directory)
 
 
 # @app.route("/products/builds/<package>/<version>/<name>")

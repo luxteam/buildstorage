@@ -48,16 +48,34 @@ table, th, td {
 /*Left side bat temporaly empty*/
 #left_control_panel{
     margin: 5px;
+    padding-right: 5px;
     float: left;
-    width: 20%;
+    width: auto;
+    min-width: 20%;
     height: 100vh;
     background-color: #282828;
     color: #fff;
 }
-
+#left_control_panel a:link{
+    color: #ccc;
+}
+#left_control_panel a:visited{
+    color: #ccc;
+}
+#left_control_panel a:hover{
+    color: #dec;
+}
 
 #main_body{
     float: left;
+}
+
+#footer{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    float: left;
+    padding: 3px;
 }
 
 
